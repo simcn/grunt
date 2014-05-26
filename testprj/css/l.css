@@ -1,0 +1,75 @@
+.content .side{ float: right;}
+.content .main{ float: left;}
+
+.btn-write-journals{ float: right; background:url(/img/hp/btn-write-journals.png) no-repeat; width: 85px; padding-left: 20px; height: 27px; line-height: 27px; color: #fff; text-align: center; }
+.journals-tab{ margin-bottom: 20px; width:660px; border-bottom: 1px solid #ededed; color: #ccc; position:relative; cursor:pointer; line-height:36px; vertical-align:text-top; z-index:1}
+.journals-tab span{ padding:0 10px; line-height: 24px; color: #005e8b; margin: 6px 0; height: 24px; border-radius: 5px;display: inline-block;}
+.journals-tab span.current{ background: #e4f0fc; border-radius: 5px;}
+
+.journals-mod .check-all{ text-align: right;}
+.journals-mod .hd span i{ background: url(/img/hp/temp_traveller_img.png) no-repeat 0 -47px;height: 10px;width:10px;display: inline-block;margin-right:5px;}
+.journals-mod .journal-item{margin-bottom:25px;word-wrap:break-word; word-break:normal;word-break:break-all;line-height:20px;position: relative;_zoom: 1;}
+.journals-mod .item-photo{ float:left;margin:0 15px 10px 0;height:120px;overflow: hidden;width:180px;position: relative;background: url(/img/golbal/ico-loading.gif) no-repeat center center;}
+.journals-mod .item-photo img{display:none; border-radius: 5px;}
+.journal-dest-cp{ position: absolute;bottom:5px;left:5px;color: #fff;line-height:18px;}
+.journal-dest-cp:hover{ color: #fff;background: #369;}
+.journals-mod h4{font-weight: normal;font-size:16px;margin-right:95px; padding-bottom: 10px;}
+.journals-mod h4 span{ display: inline-block;}
+.journals-mod h4 span i{ padding: 0 5px;}
+.journals-mod .item-infor{margin:1px 0 9px;margin-right:95px;}
+.journals-mod .item-infor a,.journals-mod .item-infor i{margin-right:10px;color: #aaa;}
+.journals-mod .item-infor a:hover{ color: #fff;background: #369;}
+.journals-mod .item-short{margin-right:95px;}
+.journals-mod .item-short a{display:inline-block; white-space:nowrap; display:inline-block;}
+
+.journals-mod .spt{ color: #db8607;float: right;*width:95px;}
+.journals-mod .spt dt{ text-align: right;}
+.journals-mod .spt dt i{ background: url(/img/hp/bg-homepage-121018.png) no-repeat -82px -53px;display: inline-block;width:14px;height:12px;margin-right:5px;}
+.journals-mod .spt dd.ding s{background: url(/img/hp/bg-homepage-121018.png) no-repeat -111px -52px;width:13px;height:12px;position: absolute;top:11px;left:8px;display: block;opacity: 0;filter: alpha(opacity=0);}
+.journals-mod .spt dd.ding{background:url(/img/hp/ico-heart.png) no-repeat top center;width:58px;height:50px;text-align: center;cursor: pointer;margin-top:15px;position: relative;float: right;}
+.journals-mod .spt dd.ding .count{ color: #fe874b;padding-top:40px;display: block; background: }
+.journals-mod .spt dd.ding p{ padding: 8px 0 0 20px;color: #a48000;}
+.journals-mod .spt dd.ding:hover{ box-shadow: 0 0px 0px #ddd;}
+
+.hot-journals .item{position:relative;padding-left:70px;color:#666;margin-bottom:20px;zoom: 1;min-height: 70px;_height: 70px;*z-index:-1;}
+.hot-journals .item img{position:absolute;left:0;top:0;display: block;}
+.hot-journals .item p{margin-top:4px;}
+
+.list-tab{ text-align: right;}
+.list-tab a {position: relative; text-decoration: none;}
+.list-tab a span{display: none; position: absolute; top: -30px; left: -40px; width: ; background: #b4dff5; width: 100px; height: 20px; line-height: 20px; color: #fff; text-align: center;}
+.list-tab a:hover span{display: block;}
+.list-tab a span i{position: absolute; width: 12px; height: 8px; background: url(/img/journal/bg-point-tab.png) no-repeat; top: 20px; left: 45px;}
+
+.tab-list{ background: url(/img/journal/bg-list-tab.png) no-repeat 0 -24px ; width: 24px; height: 24px; display: inline-block; }
+.tab-water{ background: url(/img/journal/bg-list-tab.png) no-repeat -33px 0;  width: 24px; height: 24px; display: inline-block; margin-left: 8px;}
+
+.tab-list-cur{ background: url(/img/journal/bg-list-tab.png) no-repeat 0 0px ; width: 24px; height: 24px; display: inline-block; }
+.tab-water-cur{ background: url(/img/journal/bg-list-tab.png) no-repeat -33px -24px;  width: 24px; height: 24px; display: inline-block; margin-left: 8px;}
+
+.drop-r{background:url(/img/hp/icon-header-120606.png) no-repeat scroll right -36px;position:relative;display: inline-block;padding-right:10px;z-index:2;*margin-top:-36px;}
+.drop-r:hover{
+	background-position:right -60px;}
+.drop-content{ position: absolute;left:0;display:none;background:#fff;padding:10px;width:240px;top:30px;display:none;border-width:1px;border-color:#ddd;border-style:solid;box-shadow: 1px 1px 3px #ccc;}
+.drop-r.h .drop-content{ display: block;}
+
+.drop-content p{}
+.drop-content h5{
+    font-size: 14px;
+    line-height: 2em;
+    color: #999;
+}
+.drop-content a{
+    padding: 2px 5px 2px 0;
+    line-height: 18px;
+    color:#666;
+    word-wrap:break-word; word-break:normal;word-break:break-all;
+    
+}
+
+
+
+
+
+
+
