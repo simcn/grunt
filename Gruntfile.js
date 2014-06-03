@@ -1,4 +1,8 @@
 module.exports = function(grunt) {
+
+
+    
+
     // Project configuration.
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
@@ -15,40 +19,41 @@ module.exports = function(grunt) {
             options: {
                 banner: '/*! <%= pkg.email %> <%= grunt.template.today("yyyy-mm-dd HH:MM:ss") %> */\n'
             },
-            all: {
+            my_target: {
                 files: {
-                    'dist/common.v2.0.js': 'dist/common.v2.0.js'
+                    'dist/common.min.js': ['testprj/js/head.js', 'testprj/js/gs_goto.js']
                 }
             }
         },
-        connect: {
-            server: {
-
-                options: {
-                    port: 9999,
-                    //base: 'www-root',
-                    hostname: '*',
-                }
+        imagemin: { // Task
+            dynamic: { // Another target
+                options: { // Target options
+                    optimizationLevel: 3
+                },
+                files: [{
+                    expand: true, // Enable dynamic expansion
+                    cwd: 'testprj/', // Src matches are relative to this path
+                    src: ['**/*.{png,jpg,gif}'], // Actual patterns to match
+                    dest: 'dist/' // Destination path prefix
+                }]
             }
         }
     });
     // Load the plugin that provides the "uglify" task.
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
-    //grunt.loadNpmTasks('grunt-contrib-imagemin');
-    //grunt.loadNpmTasks('grunt-contrib-jshint');
-    //grunt.loadNpmTasks('grunt-contrib-watch');
-    //grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-contrib-connect');
+    grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');    
 
-    // Default task(s).
-    grunt.registerTask('default', ['concat', 'uglify']);
-    grunt.registerTask('dev', ['concat']);
+    
+    grunt.registerTask('default', ['imagemin']);
 
-    grunt.loadNpmTasks('grunt-newer');
 
-    //grunt.registerTask('minify', ['newer:uglify:all']);
+    //Default task(s).
+    //grunt.registerTask('default', ['concat', 'uglify']);
+    //grunt.registerTask('dev', ['concat']);
 
-    //
 
 };
